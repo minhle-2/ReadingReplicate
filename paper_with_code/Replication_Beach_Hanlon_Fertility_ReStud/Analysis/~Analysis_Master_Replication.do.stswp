@@ -7,7 +7,11 @@ macro drop _all
 		global rep_dir "$root/Analysis"
 		global temp_dir "$root/Temp"
 		global results "$root/Results/"
-
+ssc install unique
+ssc install psacalc
+ssc install sutex
+ssc install texsave
+ssc install newey2
 *Data preparation
 	run "$root/Processing/Canada_Aggregate_Prep_FE.do"
 	run "$root/Processing/Canada_birth_panel.do"
@@ -84,7 +88,7 @@ macro drop _all
 	run "$rep_dir/T9_Canada_agg_robust.do"
 	
 	*Table 10: Canada (county) Spatial SE Robustness
-	run "$rep_dir/T10_Canada_spatial_SE.do"
+	*run "$rep_dir/T10_Canada_spatial_SE.do"
 	
 	*Table 11: Canada (micro) Robustness
 	run "$rep_dir/T11_Canada_micro_robust.do"
