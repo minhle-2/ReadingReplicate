@@ -16,4 +16,4 @@ estadd scalar counties = e(N_clust)
 eststo t1_c3: reghdfe br_ density_* pg_* ag_shr_* mf_ratio* youngfertileshare_* brit_origin_2 brit_origin_4 brit_origin_5 brit_origin_3 [aweight=fem_fertile_pop_1871] if inrange(period,2,5) & inlist(province,"ontario","quebec"), absorb(period loc_code) cluster(loc_code)
 estadd scalar counties = e(N_clust)
 
-esttab t1_c1 t1_c2 t1_c3 using "$results/T1_Canada_agg", b(3) se(3) label keep(brit_origin_2 brit_origin_3 brit_origin_4 brit_origin_5) order(brit_origin_2 brit_origin_3 brit_origin_4 brit_origin_5) stats(N r2_within counties, label("Observations" "Within R-squared" "No. of Counties") fmt(0 3 0)) star(* 0.10 ** 0.05 *** 0.01) mtitles("1872-1880" "1872-1880" "1864-1885") tex replace
+esttab t1_c1 t1_c2 t1_c3 using "$results/T1_Canada_agg.tex", b(3) se(3) label keep(brit_origin_2 brit_origin_3 brit_origin_4 brit_origin_5) order(brit_origin_2 brit_origin_3 brit_origin_4 brit_origin_5) stats(N r2_within counties, label("Observations" "Within R-squared" "No. of Counties") fmt(0 3 0)) star(* 0.10 ** 0.05 *** 0.01) mtitles("1872-1880" "1872-1880" "1864-1885")  tex  replace

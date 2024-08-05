@@ -1,16 +1,58 @@
 {
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{tabular}{l*{3}{c}}
+\begin{tabular}{l*{2}{c}}
 \hline\hline
-            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
-            &\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}\\
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+            &\multicolumn{1}{c}{First-stage}&\multicolumn{1}{c}{Reduced-Form}\\
 \hline
-articles\_ownXpost&      -0.063\sym{*}  &      -0.269\sym{**} &      -0.274\sym{**} \\
-            &     (0.035)         &     (0.120)         &     (0.138)         \\
+articles\_ownXpost&      -0.269\sym{**} &      -0.269\sym{**} \\
+            &     (0.120)         &     (0.120)         \\
+[1em]
+density\_71X1878&      -0.121\sym{**} &      -0.121\sym{**} \\
+            &     (0.046)         &     (0.046)         \\
+[1em]
+total\_mr\_71\_80X1878&    1759.494\sym{**} &    1759.494\sym{**} \\
+            &   (725.244)         &   (725.244)         \\
+[1em]
+under5\_mr\_71\_80X1878&      33.420         &      33.420         \\
+            &   (155.686)         &   (155.686)         \\
+[1em]
+illeg\_birth\_share\_73\_77X1878&      48.114         &      48.114         \\
+            &    (69.142)         &    (69.142)         \\
+[1em]
+shr\_manufX1878&       5.738         &       5.738         \\
+            &     (9.985)         &     (9.985)         \\
+[1em]
+shr\_agricultureX1878&       8.801         &       8.801         \\
+            &    (15.844)         &    (15.844)         \\
+[1em]
+u30\_fert\_shr\_1871X1878&    -116.544\sym{*}  &    -116.544\sym{*}  \\
+            &    (66.993)         &    (66.993)         \\
+[1em]
+mar\_rate\_73\_77X1878&      -0.053         &      -0.053         \\
+            &     (0.203)         &     (0.203)         \\
+[1em]
+shrmar\_registrar\_73\_77X1878&     -12.279         &     -12.279         \\
+            &     (9.301)         &     (9.301)         \\
+[1em]
+shrmar\_catholic\_73\_77X1878&      42.523\sym{*}  &      42.523\sym{*}  \\
+            &    (24.299)         &    (24.299)         \\
+[1em]
+shrmar\_minors\_73\_77X1878&       5.364         &       5.364         \\
+            &    (31.564)         &    (31.564)         \\
+[1em]
+shrmar\_illit\_73\_77X1878&     -82.705\sym{***}&     -82.705\sym{***}\\
+            &    (19.182)         &    (19.182)         \\
+[1em]
+shrmar\_first\_73\_77X1878&     -56.642         &     -56.642         \\
+            &    (54.927)         &    (54.927)         \\
+[1em]
+birth\_rate\_lagged&      -0.196\sym{*}  &      -0.196\sym{*}  \\
+            &     (0.109)         &     (0.109)         \\
 \hline
-r2\_within   &       0.634         &                     &                     \\
+r2\_within   &                     &                     \\
 \hline\hline
-\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
 \end{tabular}
 }

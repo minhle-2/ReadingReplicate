@@ -1,24 +1,114 @@
 {
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{tabular}{l*{5}{c}}
+\begin{tabular}{l*{3}{c}}
 \hline\hline
-                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
-                    &\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}\\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}&\multicolumn{1}{c}{birth\_rate}\\
 \hline
-Newspaper openings (75-77) $\times$ \multicolumn{1}{r}{1868-1872 period}&                     &                     &                     &                     &      -0.135         \\
-                    &                     &                     &                     &                     &     (1.095)         \\
+Newspaper openings (75-77) $\times$ \multicolumn{1}{r}{1868-1872 period}&                     &                     &      -0.135         \\
+                    &                     &                     &     (1.095)         \\
 [1em]
-Newspaper openings (75-77) $\times$ \multicolumn{1}{r}{1878-1882 period}&      -4.544\sym{**} &      -2.962\sym{***}&      -2.598\sym{***}&      -2.673\sym{***}&      -2.974\sym{**} \\
-                    &     (1.859)         &     (0.853)         &     (0.923)         &     (0.875)         &     (1.292)         \\
+Newspaper openings (75-77) $\times$ \multicolumn{1}{r}{1878-1882 period}&      -4.544\sym{**} &      -2.673\sym{***}&      -2.974\sym{**} \\
+                    &     (1.859)         &     (0.875)         &     (1.292)         \\
 [1em]
-Newspaper openings (75-77) $\times$ \multicolumn{1}{r}{1883-1888 period}&                     &                     &                     &                     &      -2.552         \\
-                    &                     &                     &                     &                     &     (1.775)         \\
+Newspaper openings (75-77) $\times$ \multicolumn{1}{r}{1883-1888 period}&                     &                     &      -2.552         \\
+                    &                     &                     &     (1.775)         \\
+[1em]
+estXpost            &                     &      -0.278         &                     \\
+                    &                     &     (0.222)         &                     \\
+[1em]
+birth\_rate\_lagged   &                     &      -0.214\sym{***}&       0.407\sym{***}\\
+                    &                     &     (0.081)         &     (0.068)         \\
+[1em]
+density\_71X1878     &                     &      -0.032         &      -0.019         \\
+                    &                     &     (0.027)         &     (0.024)         \\
+[1em]
+total\_mr\_71\_80X1878 &                     &    1036.482\sym{**} &    1101.011\sym{**} \\
+                    &                     &   (481.023)         &   (518.209)         \\
+[1em]
+under5\_mr\_71\_80X1878&                     &     -72.843         &     -21.403         \\
+                    &                     &   (134.872)         &   (125.746)         \\
+[1em]
+illeg\_birth\_share\_73\_77X1878&                     &      98.061\sym{*}  &      45.530         \\
+                    &                     &    (52.385)         &    (50.167)         \\
+[1em]
+shr\_manufX1878      &                     &       6.779         &       1.282         \\
+                    &                     &     (6.920)         &     (6.832)         \\
+[1em]
+shr\_agricultureX1878&                     &     -11.348         &       4.254         \\
+                    &                     &     (9.533)         &    (10.814)         \\
+[1em]
+u30\_fert\_shr\_1871X1878&                     &    -153.515\sym{***}&     -38.306         \\
+                    &                     &    (53.284)         &    (47.168)         \\
+[1em]
+mar\_rate\_73\_77X1878 &                     &      -0.192         &      -0.452\sym{**} \\
+                    &                     &     (0.141)         &     (0.185)         \\
+[1em]
+density\_71X1868     &                     &                     &      -0.039         \\
+                    &                     &                     &     (0.033)         \\
+[1em]
+total\_mr\_71\_80X1868 &                     &                     &     395.602         \\
+                    &                     &                     &   (658.894)         \\
+[1em]
+under5\_mr\_71\_80X1868&                     &                     &     154.045         \\
+                    &                     &                     &   (134.235)         \\
+[1em]
+illeg\_birth\_share\_73\_77X1868&                     &                     &     -41.800         \\
+                    &                     &                     &    (68.764)         \\
+[1em]
+shr\_manufX1868      &                     &                     &      -2.124         \\
+                    &                     &                     &     (8.535)         \\
+[1em]
+shr\_agricultureX1868&                     &                     &      31.122\sym{**} \\
+                    &                     &                     &    (12.600)         \\
+[1em]
+u30\_fert\_shr\_1871X1868&                     &                     &     106.238\sym{**} \\
+                    &                     &                     &    (47.961)         \\
+[1em]
+mar\_rate\_73\_77X1868 &                     &                     &      -0.422\sym{**} \\
+                    &                     &                     &     (0.205)         \\
+[1em]
+density\_71X1878     &                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+total\_mr\_71\_80X1878 &                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+under5\_mr\_71\_80X1878&                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+illeg\_birth\_share\_73\_77X1878&                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+shr\_manufX1878      &                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+shr\_agricultureX1878&                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+u30\_fert\_shr\_1871X1878&                     &                     &       0.000         \\
+                    &                     &                     &         (.)         \\
+[1em]
+mar\_rate\_73\_77X1883 &                     &                     &      -0.447\sym{**} \\
+                    &                     &                     &     (0.172)         \\
+[1em]
+pre\_75\_papersX1868  &                     &                     &      -0.043         \\
+                    &                     &                     &     (0.289)         \\
+[1em]
+pre\_75\_papersX1878  &                     &                     &      -0.277         \\
+                    &                     &                     &     (0.255)         \\
+[1em]
+pre\_75\_papersX1883  &                     &                     &      -0.708\sym{**} \\
+                    &                     &                     &     (0.273)         \\
+[1em]
+Constant            &     143.652\sym{***}&     225.227\sym{***}&     200.221\sym{***}\\
+                    &     (0.820)         &    (21.160)         &    (28.089)         \\
 \hline
-Districts           &          98         &          98         &          98         &          98         &          98         \\
-Observations        &         196         &         196         &         196         &         196         &         392         \\
-Withing R-squared   &       0.211         &       0.671         &       0.679         &       0.704         &       0.525         \\
+Districts           &          98         &          98         &          98         \\
+Observations        &         196         &         196         &         392         \\
+Withing R-squared   &       0.211         &       0.704         &       0.525         \\
 \hline\hline
-\multicolumn{6}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{6}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
 \end{tabular}
 }

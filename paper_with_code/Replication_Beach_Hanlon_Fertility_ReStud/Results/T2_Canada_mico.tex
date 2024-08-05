@@ -1,16 +1,31 @@
 {
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\begin{tabular}{l*{5}{c}}
+\begin{tabular}{l*{2}{c}}
 \hline\hline
-                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
-                    &\multicolumn{1}{c}{bc\_scaled}&\multicolumn{1}{c}{bc\_scaled}&\multicolumn{1}{c}{bc\_scaled}&\multicolumn{1}{c}{bc\_scaled}&\multicolumn{1}{c}{bc\_scaled}\\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Distr Time FE}&\multicolumn{1}{c}{Distr x Time FE}\\
 \hline
-British $\times$ Post 1877&     -10.090\sym{***}&      -8.051\sym{***}&      -5.202\sym{***}&      -5.219\sym{***}&      -5.212\sym{***}\\
-                    &     (1.788)         &     (1.652)         &     (1.404)         &     (1.251)         &     (1.203)         \\
+British Origin      &     -22.742\sym{***}&     -25.092\sym{***}\\
+                    &     (2.588)         &     (2.556)         \\
+[1em]
+British $\times$ Post 1877&      -8.051\sym{***}&      -5.422\sym{***}\\
+                    &     (1.652)         &     (1.413)         \\
+[1em]
+post                &      -5.426\sym{***}&                     \\
+                    &     (0.432)         &                     \\
+[1em]
+Mother age X Year   &                     &      -1.479\sym{***}\\
+                    &                     &     (0.053)         \\
+[1em]
+Head Occupation X Year&                     &      -1.129\sym{***}\\
+                    &                     &     (0.076)         \\
+[1em]
+Constant            &     163.418\sym{***}&     205.268\sym{***}\\
+                    &     (2.262)         &     (2.723)         \\
 \hline
-Observations        &   1,186,367         &   1,525,296         &   1,525,296         &   1,525,296         &   1,525,296         \\
+Observations        &   1,525,296         &   1,525,296         \\
 \hline\hline
-\multicolumn{6}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{6}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
 \end{tabular}
 }
