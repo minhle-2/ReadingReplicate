@@ -1,0 +1,13 @@
+**/1880_US_IPUMS_extract.dta
+
+**/Canada_1881_Raw_IPUMS_00001.dta
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.do.stswp
+Cloud/API/
+*Token.txt
+*.RData
+*.Rhistory
+*.Ruserdata

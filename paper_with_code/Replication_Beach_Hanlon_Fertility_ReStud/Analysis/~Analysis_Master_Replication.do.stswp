@@ -2,7 +2,7 @@ clear all
 macro drop _all
 
 *Define directories
-	global root ""
+	global root "D:\RSTATA\Github\ReadingReplicate\paper_with_code\Replication_Beach_Hanlon_Fertility_ReStud"
 		global data_dir "$root/Raw_Data"
 		global rep_dir "$root/Analysis"
 		global temp_dir "$root/Temp"
